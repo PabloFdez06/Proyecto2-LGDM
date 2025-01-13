@@ -5,20 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Principal</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- fuente -->
+    <script src="https://kit.fontawesome.com/aba1cb0a6a.js" crossorigin="anonymous"></script>
+    <script src="./js/darkmode.js"></script>
 </head>
 
 <body class="page page--home">
     <header class="header">
         <nav class="header__nav">
+            <a href=""><img src="./assets/img/logo.png" alt="logo_navegador" class="header__logo"></a>
+
             <ul class="header__menu">
                 <li class="header__menu-item"><a href="index.html" class="header__menu-link">Inicio</a></li>
                 <li class="header__menu-item"><a href="servicios.html" class="header__menu-link">Servicios</a></li>
                 <li class="header__menu-item"><a href="contacto.html" class="header__menu-link">Contacto</a></li>
                 <li class="header__menu-item"><a href="galeria.html" class="header__menu-link">Galería</a></li>
             </ul>
+
+            <label class="dark-mode-toggle">
+                <input type="checkbox" id="darkModeToggle">
+                <span class="slider"></span>
+            </label>
         </nav>
     </header>
-    <main class="main">
+
+    <main class="main__index">
         <section class="bienvenida">
             <h1 class="bienvenida__title">Bienvenidos</h1>
             <p class="bienvenida__subtitle">Explora nuestros servicios y descubre cómo podemos ayudarte.</p>
@@ -49,7 +61,8 @@
             <p class="contacts__text">¿Listo para empezar? <a href="contacto.html" class="contacts__link">Contáctanos aquí</a>.</p>
         </section>
     </main>
-    <footer class="footer">
+
+    <footer class="footer__index">
         <p class="footer__text">&copy; 2025 Nombre de la Empresa. Todos los derechos reservados.</p>
         <ul class="footer__social">
             <li class="footer__social-item"><a href="#" class="footer__social-link">Facebook</a></li>
