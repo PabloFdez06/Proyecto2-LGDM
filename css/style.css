@@ -1,3 +1,9 @@
+                                                            /* ------------------------------------- */
+
+                                                            /* --- COMIENZO DE ESTILOS GENERALES --- */
+
+                                                            /* ------------------------------------- */
+
 /* AJUSTES PRE-DEFINIDOS */
 
 * {
@@ -34,10 +40,12 @@ body {
 }
 
 body.dark-mode {
-    --color_2: #525151;
+    --color_1: #111111;
     --color_4: #ffffff;
 }
-  
+
+/* BOTON ACTIVAR-DESACTIVAR DARKMODE */
+
 .dark-mode-toggle {
     position: relative;
     display: inline-block;
@@ -60,7 +68,7 @@ body.dark-mode {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #000;
+    background-color: var(--color_3);
     border-radius: 25px;
     transition: background-color 0.3s;
   }
@@ -73,21 +81,27 @@ body.dark-mode {
     width: 18px;
     left: 4px;
     bottom: 3.5px;
-    background-color: #fff;
+    background-color: var(--color_4);
     border-radius: 50%;
     transition: transform 0.3s;
   }
   
   /* Estado activado */
   input:checked + .slider {
-    background-color: var(--color_3);
+    background-color: var(--color_4);
   }
   
   input:checked + .slider::before {
-    transform: translateX(24px);
+    background-color: var(--color_3);
+    transform: translateX(22px);
   }
 
-/* APARTADO ESTILOS NAVEGADOR */
+/* FIN BOTON ACTIVAR-DESACTIVAR DARKMODE */
+/* ------------------------- */
+
+/* ------------------------------ */
+/* ----- COMIENZO NAVEGADOR ----- */
+/* ------------------------------ */
 
 .header{
     position: sticky;
@@ -124,9 +138,45 @@ a.header__menu-link, .footer__social-link{
     color: var(--color_4);
 }
 
-/* FIN NAVEGADOR */
+/* ------------------------- */
+/* ----- FIN NAVEGADOR ----- */
+/* ------------------------- */
 
-/* COMIENZO DEL MAIN */
+/* --------------------------- */
+/* ----- COMIENZO FOOTER ----- */
+/* --------------------------- */
+
+.footer__index{
+    height: 14.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: var(--color_3);
+}
+
+.footer__social{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 1.5rem;
+    gap: 20rem;
+}
+
+
+                                                            /* -------------------------------- */
+                                                            /*     ------------------------     */
+                                                            /* --- FIN DE ESTILOS GENERALES --- */
+                                                            /*     ------------------------     */
+                                                            /* -------------------------------- */
+
+                                                /* -------------------------------------------------------- */
+
+                                                            /* ----------------------------- */
+                                                            /*      ---------------------    */
+                                                            /* --- MAIN -> PÁGINA INICIO --- */
+                                                            /*      ---------------------    */
+                                                            /* ----------------------------- */
 
 .main__index{
     width: 100%;
@@ -151,27 +201,10 @@ a.header__menu-link, .footer__social-link{
     padding: 1rem;
 }
 
-/* FIN MAIN */
 
 
-/* COMIENZO FOOTER */
-
-
-.footer__index{
-    height: 14.5vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1.5rem;
-    background-color: var(--color_3);
-}
-
-.footer__social{
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    padding-top: 1.5rem;
-    gap: 20rem;
-}
-
-/* FIN FOOTER */
+                                                            /* -------------------------------- */
+                                                            /*      ------------------------    */
+                                                            /* --- MAIN -> PÁGINA SERVICIOS --- */
+                                                            /*      ------------------------    */
+                                                            /* -------------------------------- */
