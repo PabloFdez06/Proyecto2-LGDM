@@ -30,39 +30,92 @@
         </nav>
     </header>
 
-    <main class="main__index">
+    <main class="main">
+        <!-- Hero Section -->
         <section class="bienvenida">
-            <h1 class="bienvenida__title">Bienvenidos</h1>
-            <p class="bienvenida__subtitle">Explora nuestros servicios y descubre cómo podemos ayudarte.</p>
-            <a href="servicios.html" class="button button--primary">Ver Servicios</a>
+            <h1 class="bienvenida__title">La tecnología a tu alcance</h1>
+            <p class="bienvenida__description">Productos innovadores y soluciones digitales diseñadas para ti.</p>
+            <a href="#productos" class="bienvenida__cta">Explorar catálogo</a>
         </section>
-        <hr class="separadores">
-        <section class="summary">
-            <h2 class="summary__title">¿Qué ofrecemos?</h2>
-            <article class="summary__cards">
-                <article class="card">
-                    <h3 class="card__title">Servicios</h3>
-                    <p class="card__description">Conoce nuestros servicios especializados.</p>
-                    <a href="servicios.html" class="card__link">Leer más</a>
+
+        <!-- Valores Diferenciales -->
+        <section class="caracteristicas">
+            <h2 class="caracteristicas__title">¿Qué nos hace diferentes?</h2>
+            <article class="caracteristicas__list">
+                <article class="caracteristicas__item">
+                    <i class="caracteristicas__icon fa-solid fa-mobile"></i>
+                    <h3 class="caracteristicas__item-title">Variedad</h3>
+                    <p class="caracteristicas__item-description">Encuentra todo lo que necesitas en tecnología.</p>
                 </article>
-                <article class="card">
-                    <h3 class="card__title">Contacto</h3>
-                    <p class="card__description">Ponte en contacto con nosotros para saber más.</p>
-                    <a href="contacto.html" class="card__link">Leer más</a>
+                <article class="caracteristicas__item">
+                    <i class="caracteristicas__icon fa-solid fa-check-circle"></i>
+                    <h3 class="caracteristicas__item-title">Calidad Garantizada</h3>
+                    <p class="caracteristicas__item-description">Solo trabajamos con marcas reconocidas.</p>
                 </article>
-                <article class="card">
-                    <h3 class="card__title">Galería</h3>
-                    <p class="card__description">Explora nuestros trabajos recientes.</p>
-                    <a href="galeria.html" class="card__link">Leer más</a>
+                <article class="caracteristicas__item">
+                    <i class="caracteristicas__icon fa-solid fa-headset"></i>
+                    <h3 class="caracteristicas__item-title">Atención Personalizada</h3>
+                    <p class="caracteristicas__item-description">Nuestro equipo siempre está para ayudarte.</p>
+                </article>
+                <article class="caracteristicas__item">
+                    <i class="caracteristicas__icon fa-solid fa-shipping-fast"></i>
+                    <h3 class="caracteristicas__item-title">Envíos Rápidos</h3>
+                    <p class="caracteristicas__item-description">Entregamos en tiempo récord en todo el país.</p>
                 </article>
             </article>
         </section>
-        <section class="contacts">
-            <h2 class="contacts__title">Contáctanos</h2>
-            <p class="contacts__text">¿Listo para empezar? <a href="contacto.html" class="contacts__link">Contáctanos aquí</a>.</p>
-        </section>
-    </main>
 
+        <hr class="separadores">
+        <!-- Productos -->
+        <section id="productos" class="products">
+            <h2 class="products__title">Productos Destacados</h2>
+            <article class="products__flex">
+                <article class="product-card">
+                    <h3 class="product-card__title">Smartphones</h3>
+                    <img src="./assets/img/productos_inicio/smartphone.png" alt="Smartphone" class="product-card__image">
+                    <a href="https://www.pccomponentes.com/movil-apple-iphone-16-128gb-negro" class="product-card__link">Ver más</a>
+                </article>
+                <article class="product-card">
+                    <h3 class="product-card__title">Ordenadores</h3>
+                    <img src="./assets/img/productos_inicio/ordenador.png" alt="Ordenador" class="product-card__image">
+                    <a href="https://www.pccomponentes.com/ordenador-sobremesa-pccom-ready-intel-core-i5-12400f-32gb-ram-1tb-ssd-rtx-4060-legacy" class="product-card__link">Ver más</a>
+                </article>
+                <article class="product-card">
+                    <h3 class="product-card__title">Perifericos</h3>
+                    <img src="./assets/img/productos_inicio/pantalla.png" alt="Periferico" class="product-card__image">
+                    <a href="https://www.pccomponentes.com/msi-g24c4-e2-236-led-fullhd-180-hz-freesync-premium-curva" class="product-card__link">Ver más</a>
+                </article>
+            </article>
+        </section>
+
+        <hr class="separadores">
+
+        <!-- Testimonios -->
+        <section class="testimonios">
+            <h2 class="testimonios__title">Lo que opinan nuestros clientes</h2>
+            <article class="testimonios__list">
+                <blockquote class="testimonios__item">
+                    <p class="testimonios__text">"¡Me encantó mi experiencia con BLETETECH!"</p>
+                    <cite class="testimonios__author">- Pablo Fernández</cite>
+                </blockquote>
+                <blockquote class="testimonios__item">
+                    <p class="testimonios__text">"Rápido, fácil y de calidad. Que mas quiero jefe!"</p>
+                    <cite class="testimonios__author">- Fran Alba</cite>
+                </blockquote>
+                <blockquote class="testimonios__item">
+                    <p class="testimonios__text">"La entrega llega en lo indicado, muy contento!"</p>
+                    <cite class="testimonios__author">- Antonio Garcia</cite>
+                </blockquote>
+            </article>
+        </section>
+
+        <!-- Promoción Especial --> <!-- ESTA SECCIÓN SERÁ UTILIZADA EN LAS DEMÁS PÁGINAS, MENOS EN INICIO  -->
+<!--         <section class="promo">
+            <h2 class="promo__title">¡Rebajas de lanzamiento!</h2>
+            <p class="promo__description">Hasta un 20% de descuento en todos los productos.</p>
+            <a href="#" class="promo__cta">Aprovechar descuento</a>
+        </section> -->
+    </main>
     <footer class="footer__index">
         <p class="footer__text">&copy; 2025 BLETETECH. Todos los derechos reservados.</p>
         <ul class="footer__social">
