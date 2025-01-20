@@ -21,6 +21,10 @@ li {
     list-style: none;
 }
 
+ul{
+    list-style: none;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -144,16 +148,6 @@ body.dark-mode {
     color: var(--color_2);
 }
 
-.footer__social-link {
-    transition: transform 0.3s ease, color 0.3s ease;
-    color: var(--color_4);
-    display: inline-block;
-}
-
-.footer__social-link:hover {
-    transform: scale(1.5);
-    color: var(--color_2);
-}
 
 /* ------------------------- */
 /* ----- FIN NAVEGADOR ----- */
@@ -164,21 +158,65 @@ body.dark-mode {
 /* --------------------------- */
 
 .footer__index{
-    height: 14.5vh;
+    background-color: var(--color_3);
+    padding: 30px 40px 30px;
+}
+
+.footer__copyright{
+    font-size: large;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color_4);
+    padding: 0px 0px 30px;
+}
+
+.footer__index h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--color_4);
+    padding: 0 0 0.8rem; 
+}
+
+ .footer__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; 
+    gap: 2rem; 
+}
+
+
+.footer__contact-art, .footer__nav-art, .footer__social-art, .footer__payment-art{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1.5rem;
-    background-color: var(--color_3);
 }
 
-.footer__social{
-    height: 100%;
+.footer__contact--links, .footer__nav--links{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer__social--links, .footer__payment--links{
     display: flex;
     flex-direction: row;
-    padding-top: 1.5rem;
-    gap: 20rem;
+    align-items: center;
+    gap: 2rem;
 }
+
+.footer__social-link, .footer__payment-link, .footer__nav--links a, .footer__contact--links a {
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: var(--color_4);
+}
+
+.footer__social-link:hover, .footer__payment-link:hover, .footer__nav--links a:hover, .footer__contact--links a:hover {
+    transform: scale(1.5);
+    color: var(--color_2);
+}
+
+
+
 
 
                                                             /* -------------------------------- */
