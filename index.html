@@ -12,22 +12,32 @@
 </head>
 
 <body class="page page--home">
-    <header class="header">
-        <nav class="header__nav">
-            <a href="./index.html"><img src="./assets/img/logo.png" alt="logo_navegador" class="header__logo"></a>
+    <header class="header__content">
+        <a href="./index.html"><img src="./assets/img/logo.png" alt="logo_navegador" class="header__logo"></a>
 
+        <nav class="header__nav">
             <ul class="header__menu">
                 <li class="header__menu-item"><a href="index.html" class="header__menu-link">Inicio</a></li>
                 <li class="header__menu-item"><a href="servicios.html" class="header__menu-link">Servicios</a></li>
                 <li class="header__menu-item"><a href="contacto.html" class="header__menu-link">Contacto</a></li>
                 <li class="header__menu-item"><a href="galeria.html" class="header__menu-link">Galería</a></li>
             </ul>
-
-            <label class="dark-mode-toggle">
-                <input type="checkbox" id="darkModeToggle">
-                <span class="slider"></span>
-            </label>
         </nav>
+
+
+        <article class="header__buttons">
+            <ul class="header__buttons--button">
+                <li class="header__button--link"><a href="./servicios.html"><i class="fas fa-shopping-cart"></i></a></li>
+                <li class="header__button--link"><a href="./perfil.html"><i class="far fa-user-circle"></i></a></li>
+            </ul>
+        </article>
+
+        <label class="dark-mode-toggle">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"></span>
+        </label>
+
+        
     </header>
 
     <main class="main">
@@ -41,51 +51,51 @@
         <!-- Valores Diferenciales -->
         <section class="caracteristicas">
             <h2 class="caracteristicas__title">¿Qué nos hace diferentes?</h2>
-            <article class="caracteristicas__list">
-                <article class="caracteristicas__item">
+            <ul class="caracteristicas__list">
+                <li class="caracteristicas__item">
                     <i class="caracteristicas__icon fa-solid fa-mobile"></i>
                     <h3 class="caracteristicas__item-title">Variedad</h3>
                     <p class="caracteristicas__item-description">Encuentra todo lo que necesitas en tecnología.</p>
-                </article>
-                <article class="caracteristicas__item">
+                </li>
+                <li class="caracteristicas__item">
                     <i class="caracteristicas__icon fa-solid fa-check-circle"></i>
                     <h3 class="caracteristicas__item-title">Calidad Garantizada</h3>
                     <p class="caracteristicas__item-description">Solo trabajamos con marcas reconocidas.</p>
-                </article>
-                <article class="caracteristicas__item">
+                </li>
+                <li class="caracteristicas__item">
                     <i class="caracteristicas__icon fa-solid fa-headset"></i>
                     <h3 class="caracteristicas__item-title">Atención Personalizada</h3>
                     <p class="caracteristicas__item-description">Nuestro equipo siempre está para ayudarte.</p>
-                </article>
-                <article class="caracteristicas__item">
+                </li>
+                <li class="caracteristicas__item">
                     <i class="caracteristicas__icon fa-solid fa-shipping-fast"></i>
                     <h3 class="caracteristicas__item-title">Envíos Rápidos</h3>
                     <p class="caracteristicas__item-description">Entregamos en tiempo récord en todo el país.</p>
-                </article>
-            </article>
+                </li>
+            </ul>
         </section>
 
         <hr class="separadores">
         <!-- Productos -->
         <section id="productos" class="products">
             <h2 class="products__title">Productos Destacados</h2>
-            <article class="products__flex">
-                <article class="product-card">
+            <ul class="products__flex">
+                <li class="product-card">
                     <h3 class="product-card__title">Smartphones</h3>
                     <img src="./assets/img/productos_inicio/smartphone.png" alt="Smartphone" class="product-card__image">
                     <a href="https://www.pccomponentes.com/movil-apple-iphone-16-128gb-negro" class="product-card__link">Ver más</a>
-                </article>
-                <article class="product-card">
+                </li>
+                <li class="product-card">
                     <h3 class="product-card__title">Ordenadores</h3>
                     <img src="./assets/img/productos_inicio/ordenador.png" alt="Ordenador" class="product-card__image">
                     <a href="https://www.pccomponentes.com/ordenador-sobremesa-pccom-ready-intel-core-i5-12400f-32gb-ram-1tb-ssd-rtx-4060-legacy" class="product-card__link">Ver más</a>
-                </article>
-                <article class="product-card">
+                </li>
+                <li class="product-card">
                     <h3 class="product-card__title">Perifericos</h3>
                     <img src="./assets/img/productos_inicio/pantalla.png" alt="Periferico" class="product-card__image">
                     <a href="https://www.pccomponentes.com/msi-g24c4-e2-236-led-fullhd-180-hz-freesync-premium-curva" class="product-card__link">Ver más</a>
-                </article>
-            </article>
+                </li>
+            </ul>
         </section>
 
         <hr class="separadores">
@@ -108,13 +118,6 @@
                 </blockquote>
             </article>
         </section>
-
-        <!-- Promoción Especial --> <!-- ESTA SECCIÓN SERÁ UTILIZADA EN LAS DEMÁS PÁGINAS, MENOS EN INICIO  -->
-<!--         <section class="promo">
-            <h2 class="promo__title">¡Rebajas de lanzamiento!</h2>
-            <p class="promo__description">Hasta un 20% de descuento en todos los productos.</p>
-            <a href="#" class="promo__cta">Aprovechar descuento</a>
-        </section> -->
     </main>
     <footer class="footer__index">
         <p class="footer__copyright">&copy; 2025 BLETETECH. Todos los derechos reservados.</p>
@@ -122,9 +125,11 @@
             <article class="footer__contact-art">
                 <h3>Contacto</h3>
                 <article class="footer__contact--links">
-                    <span>📞 Teléfono: +34 123 456 789</span>
-                    <span>✉️ Email: <a href="mailto:soporte@boxingmerch.com">soporte@bletetech.com</a></span>
-                    <span>📍 Dirección: Calle del amor 123, Cadiz, España</span>
+                    <ul class="footer__contact-link">
+                    <li>📞 Teléfono: +34 123 456 789</li>
+                    <li>✉️ Email: <a href="mailto:soporte@boxingmerch.com">soporte@bletetech.com</a></li>
+                    <li>📍 Dirección: Calle del amor 123, Cadiz, España</li>
+                </ul>
                 </article>
             </article>
 

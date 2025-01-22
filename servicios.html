@@ -12,65 +12,157 @@
 </head>
 
 <body class="page page--home">
-    <header class="header">
-        <nav class="header__nav">
-            <a href="./index.html"><img src="./assets/img/logo.png" alt="logo_navegador" class="header__logo"></a>
+    <header class="header__content">
+        <a href="./index.html"><img src="./assets/img/logo.png" alt="logo_navegador" class="header__logo"></a>
 
+        <nav class="header__nav">
             <ul class="header__menu">
                 <li class="header__menu-item"><a href="index.html" class="header__menu-link">Inicio</a></li>
                 <li class="header__menu-item"><a href="servicios.html" class="header__menu-link">Servicios</a></li>
                 <li class="header__menu-item"><a href="contacto.html" class="header__menu-link">Contacto</a></li>
                 <li class="header__menu-item"><a href="galeria.html" class="header__menu-link">Galería</a></li>
             </ul>
-
-            <label class="dark-mode-toggle">
-                <input type="checkbox" id="darkModeToggle">
-                <span class="slider"></span>
-            </label>
         </nav>
+
+
+        <article class="header__buttons">
+            <ul class="header__buttons--button">
+                <li class="header__button--link"><a href="./servicios.html"><i class="fas fa-shopping-cart"></i></a></li>
+                <li class="header__button--link"><a href="./perfil.html"><i class="far fa-user-circle"></i></a></li>
+            </ul>
+        </article>
+
+        <label class="dark-mode-toggle">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"></span>
+        </label>
+
+        
     </header>
 
-    <main class="main__index">
-        <section class="bienvenida">
-            <h1 class="bienvenida__title">SERVICIOS</h1>
-<!--
-            <p class="bienvenida__subtitle">Explora nuestros servicios y descubre cómo podemos ayudarte.</p>
-            <a href="servicios.html" class="button button--primary">Ver Servicios</a> -->
-        </section>
-        <hr class="separadores">
-        <section class="summary">
-<!--             <h2 class="summary__title">¿Qué ofrecemos?</h2>
-            <article class="summary__cards">
-                <article class="card">
-                    <h3 class="card__title">Servicios</h3>
-                    <p class="card__description">Conoce nuestros servicios especializados.</p>
-                    <a href="servicios.html" class="card__link">Leer más</a>
+    <main class="services__page">
+        <section>
+            <article class="services__page--section">
+                <h2 class="services__page--title">Consultoría personalizada</h2>
+                <hr class="separadores__services">
+                <article class="service__details">
+                    <p class="service__description">Te ayudamos a encontrar las mejores soluciones para tu negocio. Nuestro equipo de expertos analiza tus necesidades y desarrolla estrategias específicas para alcanzar tus objetivos.</p>
+                    <ul class="service__list">
+                        <li class="service__list-item">Análisis detallado de tu sector</li>
+                        <li class="service__list-item">Recomendaciones basadas en datos</li>
+                        <li class="service__list-item">Seguimiento continuo para asegurar resultados</li>
+                    </ul>
                 </article>
-                <article class="card">
-                    <h3 class="card__title">Contacto</h3>
-                    <p class="card__description">Ponte en contacto con nosotros para saber más.</p>
-                    <a href="contacto.html" class="card__link">Leer más</a>
+                <article class="services__page--cta">
+                    <a class="services__page--cta-link" href="#">¡Contáctanos ahora!</a>
                 </article>
-                <article class="card">
-                    <h3 class="card__title">Galería</h3>
-                    <p class="card__description">Explora nuestros trabajos recientes.</p>
-                    <a href="galeria.html" class="card__link">Leer más</a>
+            </article>
+
+            <article class="services__page--section">
+                <h2 class="services__page--title">Marketing digital</h2>
+                <hr class="separadores__services">
+                    <article class="service__details">
+                        <p class="service__description">Potenciamos tu marca con estrategias de marketing digital diseñadas para atraer y fidelizar clientes. Nuestro enfoque integral incluye:</p>
+                        <ul class="service__list">
+                            <li class="service__list-item">Campañas en redes sociales</li>
+                            <li class="service__list-item">Estrategias de contenido</li>
+                            <li class="service__list-item">Publicidad en línea (SEM)</li>
+                            <li class="service__list-item">Optimización en motores de búsqueda (SEO)</li>
+                        </ul>
+                    </article>
+                    <article class="services__page--cta">
+                        <a class="services__page--cta-link" href="#">¡Contáctanos ahora!</a>
+                    </article>
                 </article>
-            </article> -->
+
+                <article class="services__page--section">
+                        <h2 class="services__page--title">Desarrollo web</h2>
+                        <hr class="separadores__services">
+                        <article class="service__details">
+                            <p class="service__description">Diseñamos y desarrollamos páginas web modernas y funcionales. Nuestro objetivo es crear una experiencia de usuario excepcional mientras mejoramos tu presencia digital.</p>
+                            <ul class="service__list">
+                                <li class="service__list-item">Diseño personalizado</li>
+                                <li class="service__list-item">Diseño responsivo</li>
+                                <li class="service__list-item">Optimización para motores de búsqueda (SEO)</li>
+                                <li class="service__list-item">Integración con herramientas de análisis</li>
+                            </ul>
+                        </article>
+                    </article>
         </section>
-        <section class="contacts">
-<!--             <h2 class="contacts__title">Contáctanos</h2>
-            <p class="contacts__text">¿Listo para empezar? <a href="contacto.html" class="contacts__link">Contáctanos aquí</a>.</p> -->
+
+
+        <section class="services__page--section">
+            <h2 class="services__page--title">Nuestros compromisos</h2>
+            <article class="comments">
+                <article class="comments__item">
+                    <h3 class="comments__title">Innovación constante</h3>
+                    <p class="comments__description">Nos mantenemos a la vanguardia de las tecnologías y tendencias para ofrecerte siempre las mejores soluciones.</p>
+                </article>
+                <article class="comments__item">
+                    <h3 class="comments__title">Atención al cliente</h3>
+                    <p class="comments__description">Estamos disponibles para responder tus dudas y brindarte soporte en todo momento.</p>
+                </article>
+                <article class="comments__item">
+                    <h3 class="comments__title">Resultados medibles</h3>
+                    <p class="comments__description">Nos enfocamos en ofrecer resultados tangibles que impulsen tu éxito.</p>
+                </article>
+            </article>
         </section>
+
+        <!-- Promoción Especial --> 
+         <section class="promo">
+            <h2 class="promo__title">¡Rebajas de lanzamiento!</h2>
+            <p class="promo__description">Hasta un 20% de descuento en todos los productos.</p>
+            <a href="#" class="promo__cta">Aprovechar descuento</a>
+        </section> 
     </main>
 
     <footer class="footer__index">
-        <p class="footer__text">&copy; 2025 BLETETECH. Todos los derechos reservados.</p>
-        <ul class="footer__social">
-            <li class="footer__social-item"><a href="#" class="footer__social-link">Facebook</a></li>
-            <li class="footer__social-item"><a href="#" class="footer__social-link">Instagram</a></li>
-            <li class="footer__social-item"><a href="#" class="footer__social-link">LinkedIn</a></li>
-        </ul>
+        <p class="footer__copyright">&copy; 2025 BLETETECH. Todos los derechos reservados.</p>
+        <article class="footer__container">
+            <article class="footer__contact-art">
+                <h3>Contacto</h3>
+                <article class="footer__contact--links">
+                    <ul class="footer__contact-link">
+                    <li>📞 Teléfono: +34 123 456 789</li>
+                    <li>✉️ Email: <a href="mailto:soporte@boxingmerch.com">soporte@bletetech.com</a></li>
+                    <li>📍 Dirección: Calle del amor 123, Cadiz, España</li>
+                </ul>
+                </article>
+            </article>
+
+            <article class="footer__nav-art">
+                <h3>Navegación</h3>
+                <article class="footer__nav--links">
+                    <ul class="footer__nav-link">
+                        <li class="hola"><a href="./index.html">Inicio</a></li>
+                        <li><a href="./servicios.html">Servicios</a></li>
+                        <li><a href="#">Terminos y Condiciones</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </article>
+            </article>
+
+            <article class="footer__social-art">
+                <h3>Redes sociales</h3>
+                <article class="footer__social--links">
+                        <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-youtube"></i></a>
+                </article>
+            </article>
+
+            <article class="footer__payment-art">
+                <h3>Pagos</h3>
+                <article class="footer__payment--links">
+                    <a href="#" class="footer__payment-link"><i class="fas fa-credit-card"></i></a>
+                    <a href="#" class="footer__payment-link"><i class="fab fa-cc-mastercard"></i></a>
+                    <a href="#" class="footer__payment-link"><i class="fab fa-paypal"></i></a>
+                </article>
+            </article>
+        </article>
+
     </footer>
     
 </body>

@@ -44,7 +44,9 @@ body {
 }
 
 body.dark-mode {
-    --color_1: #111111;
+    --color_1: #022B3A;
+    --color_2: #1F1F1F;
+    --color_3: #1F7A8C;
     --color_4: #ffffff;
 }
 
@@ -107,7 +109,14 @@ body.dark-mode {
 /* ----- COMIENZO NAVEGADOR ----- */
 /* ------------------------------ */
 
-.header{
+.header__content{
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--color_1);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -115,17 +124,13 @@ body.dark-mode {
 
 .header__nav{
     width: 100%;
-    height: 12vh;
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: var(--color_1);
-    padding: 2rem;
 }
 
-.header__nav .header__logo{
-    width: 170px;
-    height: 80px;
+.header__logo{
+    width: 200px;
 }
 
 .header__menu{
@@ -148,6 +153,31 @@ body.dark-mode {
     color: var(--color_2);
 }
 
+.header__buttons{
+    padding-right: 0.5rem;
+}
+
+.header__buttons--button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    border-right: 1px solid var(--color_2);
+    height: 4rem;
+    gap: 1rem;
+}
+
+.header__button--link a{
+    display: block;
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: var(--color_4);
+}
+
+
+.header__button--link a:hover {
+    transform: scale(1.3); 
+    color: var(--color_2);
+}
 
 /* ------------------------- */
 /* ----- FIN NAVEGADOR ----- */
@@ -425,39 +455,8 @@ body.dark-mode {
     color: var(--color_3);
 }
 
-/* Promo Section */ /*  ESTA SECCIÓN SERÁ UTILIZADA EN LAS DEMÁS PÁGINAS, MENOS EN INICIO  */
-/* .promo {
-    padding: 40px 20px;
-    text-align: center;
-    background-color: #ff5722;
-    color: #fff;
-}
 
-.promo__title {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
 
-.promo__description {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-}
-
-.promo__cta {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #fff;
-    color: #ff5722;
-    font-weight: 700;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-}
-
-.promo__cta:hover {
-    background-color: #e64a19;
-    color: #fff;
-}
- */
 
 
                                                             /* -------------------------------- */
@@ -465,3 +464,114 @@ body.dark-mode {
                                                             /* --- MAIN -> PÁGINA SERVICIOS --- */
                                                             /*      ------------------------    */
                                                             /* -------------------------------- */
+
+.services__page {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.services__page--section {
+    background-color: var(--color_1);
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.services__page--title {
+    color: var(--color_4);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.service__list {
+    padding-left: 1.5rem;
+}
+
+.service__list-item {
+    padding: 0.5rem;
+    list-style-type: disc;
+}
+
+.services__page--cta {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.services__page--cta-link {
+    background-color: var(--color_2);
+    color: var(--color_4);
+    padding: 0.7rem 1.5rem;
+    border-radius: 1.5rem 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.services__page--cta-link:hover {
+    background-color: var(--color_4);
+    color: var(--color_2);
+}
+
+.separadores__services{
+    width: 80%;
+    margin: 1rem auto;
+}
+
+.comments {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.comments__item {
+    flex: 1 1 calc(33% - 2rem); /* HACER EL FLEX DE ESTA MANERA ME PERMITE QUE SE VAYA AJUSTANDO SEGUN EL TAMAÑO DE LOS ELEMENTOS, Y POR EJEMPLO DE LA PÁGINA, SIN DARNOS CUENTA ESTO NOS PERMITE QUE EL DISEÑO SEA RESPONSIVE. */
+    background-color: var(--color_2);
+    padding: 1.5rem;
+    border-radius: 1.5rem 0.5rem;
+    text-align: center;
+}
+
+.comments__title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--color_4);
+}
+
+.comments__description {
+    font-size: 1rem;
+    color: var(--color_3)
+}                                                    
+
+.promo {
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 0.5rem;
+    background-color: var(--color_1);
+    color: var(--color_4);
+}
+
+.promo__title {
+    font-size: 2rem;
+    padding-bottom: 0.7rem;
+}
+
+.promo__description {
+    font-size: 1.1rem;
+    padding-bottom: 1.2rem;
+}
+
+.promo__cta {
+    display: inline-block;
+    padding: 0.7rem;
+    background-color: var(--color_2);
+    color: var(--color_4);
+    font-weight: 700;
+    border-radius: 1.5rem 0.3rem;
+    transition: background 0.3s ease;
+}
+
+.promo__cta:hover {
+    background-color: var(--color_4);
+    color: var(--color_2);
+}
