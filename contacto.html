@@ -63,16 +63,16 @@
                 <h2>Datos Personales</h2>
                 <form>
                   <label for="name">Nombre:</label>
-                  <input type="text" id="name" name="name" value="Pablo Fernandez" />
+                  <input type="text" id="name" class="profile__inputs" name="name" value="Pablo Fernandez" />
 
                   
                   <label for="email">Correo Electrónico:</label>
-                  <input type="email" id="email" name="email" value="Pablo.Fernandez@gmail.com" />
+                  <input type="email" id="email" class="profile__inputs" name="email" value="Pablo.Fernandez@gmail.com" />
                   
                   <label for="phone">Teléfono:</label>
-                  <input type="tel" id="phone" name="phone" value="+34 678 123 456" />
+                  <input type="tel" id="phone" class="profile__inputs" name="phone" value="+34 678 123 456" />
                   
-                  <button type="submit">Guardar Cambios</button>
+                  <button type="submit" class="contacts__buttons">Guardar Cambios</button>
                 </form>
               </article>
               
@@ -82,11 +82,11 @@
                 <article class="user__bank-card">
                   <p>**** **** **** 1234</p>
                   <p>Expira: 12/24</p>
-                  <button>Editar</button>
-                  <button>Eliminar</button>
+                  <button class="contacts__buttons-bank">Editar</button>
+                  <button class="contacts__buttons-bank">Eliminar</button>
 
                 </article>
-                <button>Añadir Tarjeta</button>
+                <button class="contacts__buttons">Añadir Tarjeta</button>
               </article>
               
               <!-- Seguridad -->
@@ -94,12 +94,12 @@
                 <h2>Seguridad</h2>
                 <form>
                   <label for="current-password">Contraseña Actual:</label>
-                  <input type="password" id="current-password" name="current-password" />
+                  <input type="password" id="current-password" class="profile__inputs" name="current-password" />
                   
                   <label for="new-password">Nueva Contraseña:</label>
-                  <input type="password" id="new-password" name="new-password" />
+                  <input type="password" id="new-password" class="profile__inputs" name="new-password" />
                   
-                  <button type="submit">Actualizar Contraseña</button>
+                  <button type="submit" class="contacts__buttons">Actualizar Contraseña</button>
                 </form>
               </article>
             </section>
@@ -110,7 +110,7 @@
                 <label for="mensaje" class="user__contact__form-title"><h1>CONTACTA CON NOSOTROS A TRAVES DEL SIGUIENTE FORMULARIO</h1></label>
                 <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" rows="5" required></textarea>
     
-                <button type="submit">Enviar</button>
+                <button type="submit" class="contact__form-button">Enviar</button>
             </form>
           </section>
     </main>

@@ -600,9 +600,9 @@ box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
                                                             /* -------------------------------- */
 
 .user__profile {
-    display: flex;
-    width: 100%;
-    }
+display: flex;
+width: 100%;
+}
     
 .profile__sidebar {
 width: 25%;
@@ -679,7 +679,7 @@ margin: 10px 0 5px;
 color: var(--color_4);
 }
 
-form input {
+.profile__inputs {
 width: 100%;
 padding: 8px;
 margin-bottom: 15px;
@@ -689,12 +689,12 @@ background-color: var(--color_1);
 color: var(--color_4);
 }
 
-form input:focus {
+.profile__inputs:focus {
 border-color: var(--color_4);
 outline: none;
 }
 
-button {
+.contacts__buttons {
 background-color: var(--color_4);
 color: var(--color_3);
 border: none;
@@ -704,12 +704,26 @@ border-radius: 4px;
 transition: transform 0.3s ease, color 0.3s ease;
 }
 
+.contacts__buttons:hover {
+    transform: scale(1.05);
+    color: var(--color_4);
+    background-color: var(--color_1);
+}
 
-
-button:hover {
-transform: scale(1.05); 
-background-color: var(--color_1);
+.contacts__buttons-bank{
+background-color: var(--color_2);
 color: var(--color_4);
+border: none;
+padding: 10px 15px;
+cursor: pointer;
+border-radius: 4px;
+transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contacts__buttons-bank:hover {
+transform: scale(1.05);
+color: var(--color_2);
+background-color: var(--color_4);
 }
 
 .user__bank-card {
@@ -726,50 +740,53 @@ margin: 5px 0;
 }
 
 .user__contact__form-title{
-    text-align: center;
+text-align: center;
 }
 
 .form-contacto {
-    width: 100%;
-    background-color: var(--color_1);
-    padding: 20px 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+width: 100%;
+background-color: var(--color_1);
+padding: 20px 30px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .form-contacto label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 1rem;
-    font-weight: bold;
+display: block;
+padding-bottom: 0.6rem;
+font-size: 1rem;
+font-weight: bold;
 }
 
 .form-contacto input, .form-contacto textarea {
-    width: 80%;
-    margin: auto;
-    padding: 0.6rem;
-    border: 1px solid var(--color_3);
-    border-radius: 5px;
-    font-size: 1rem;
-    background-color: var(--color_4);
-    color: var(--color_3);
+display: block;
+width: 80%;
+margin: auto;
+padding: 0.6rem;
+border: 1px solid var(--color_3);
+border-radius: 5px;
+font-size: 1rem;
+background-color: var(--color_4);
+color: var(--color_3);
 }
 
 .form-contacto input:focus, .form-contacto textarea:focus {
-    outline: none;
-    border-color: var(--color_2);
+outline: none;
+border-color: var(--color_2);
 }
 
-.form-contacto button {
-    width: 60%;
-    padding: 10px;
-    background-color: var(--color_3);
-    color: var(--color_4);
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
+.contact__form-button {
+display: block;
+width: 60%;
+margin: auto;
+padding: 10px;
+background-color: var(--color_3);
+color: var(--color_4);
+border: none;
+border-radius: 5px;
+font-size: 1rem;
+cursor: pointer;
 }
 
-.form-contacto button:hover {
-    background-color: var(--color_2);
+.contact__form-button:hover {
+background-color: var(--color_2);
 }
