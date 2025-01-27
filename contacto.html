@@ -44,23 +44,23 @@
         <section class="user__profile">
             <article class="profile__sidebar">
                 <article class="user__profile-pic">
-                    <img src="./assets/img/perfil.png" alt="Foto de perfil">
-                    <p>Pablo Fernandez</p>
+                    <img src="./assets/img/perfil.png" alt="Foto de perfil" class="profile__sidebar-img">
+                    <p class="user__profile-pic-name">Pablo Fernandez</p>
 
                 </article>
-                <ul>
-                    <li><a href="#personal-info">Datos Personales</a></li>
-                    <li><a href="#bank-info">Información Bancaria</a></li>
-                    <li><a href="#security">Seguridad</a></li>
-                    <li><a href="#notifications">Notificaciones</a></li>
-                    <li><a href="#img">Editar Imagen</a></li>
+                <ul class="profile__sidebar-un-list">
+                    <li class="profile__sidebar--list"><a href="#personal-info" class="profile__sidebar-listitem">Datos Personales</a></li>
+                    <li class="profile__sidebar--list"><a href="#bank-info" class="profile__sidebar-listitem">Información Bancaria</a></li>
+                    <li class="profile__sidebar--list"><a href="#security" class="profile__sidebar-listitem">Seguridad</a></li>
+                    <li class="profile__sidebar--list"><a href="#notifications" class="profile__sidebar-listitem">Notificaciones</a></li>
+                    <li class="profile__sidebar--list"><a href="#img" class="profile__sidebar-listitem">Editar Imagen</a></li>
                 </ul>
 
             </article>
             <section class="profile__main-content">
               <!-- Datos Personales -->
               <article id="personal-info">
-                <h2>Datos Personales</h2>
+                <h2 class="profile__main-content-title">Datos Personales</h2>
                 <form class="profile__info--form">
                   <label for="name" class="profile__labels">Nombre:</label>
                   <input type="text" id="name" class="profile__inputs" name="name" value="Pablo Fernandez" />
@@ -80,8 +80,8 @@
               <article id="user__bank-info">
                 <h2>Información Bancaria</h2>
                 <article class="user__bank-card">
-                  <p>**** **** **** 1234</p>
-                  <p>Expira: 12/24</p>
+                  <p class="user__bank-card--item">**** **** **** 1234</p>
+                  <p class="user__bank-card--item">Expira: 12/25</p>
                   <button class="contacts__buttons-bank">Editar</button>
                   <button class="contacts__buttons-bank">Eliminar</button>
 
@@ -108,7 +108,7 @@
           <section class="user__contact-form">
             <form action="#" method="POST" class="form-contacto">
                 <h1 class="user__contact__form-title">CONTACTA CON NOSOTROS A TRAVES DEL SIGUIENTE FORMULARIO</h1>
-                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" rows="5" required></textarea>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" rows="5" required class="form-contacto-textarea"></textarea>
     
                 <button type="submit" class="contact__form-button">Enviar</button>
             </form>
@@ -129,18 +129,6 @@
                 </article>
             </article>
 
-            <article class="footer__nav-art">
-                <h3>Navegación</h3>
-                <article class="footer__nav--links">
-                    <ul class="footer__nav-link">
-                        <li class="hola"><a href="./index.html">Inicio</a></li>
-                        <li><a href="./servicios.html">Servicios</a></li>
-                        <li><a href="#">Terminos y Condiciones</a></li>
-                        <li><a href="#">Contacto</a></li>
-                    </ul>
-                </article>
-            </article>
-
             <article class="footer__social-art">
                 <h3>Redes sociales</h3>
                 <article class="footer__social--links">
@@ -157,6 +145,18 @@
                     <a href="#" class="footer__payment-link"><i class="fas fa-credit-card"></i></a>
                     <a href="#" class="footer__payment-link"><i class="fab fa-cc-mastercard"></i></a>
                     <a href="#" class="footer__payment-link"><i class="fab fa-paypal"></i></a>
+                </article>
+            </article>
+
+            <article class="footer__nav-art">
+                <h3>Navegación</h3>
+                <article class="footer__nav--links">
+                    <ul class="footer__nav-link">
+                        <li class="hola"><a href="./index.html">Inicio</a></li>
+                        <li><a href="./servicios.html">Servicios</a></li>
+                        <li><a href="#">Terminos y Condiciones</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
                 </article>
             </article>
         </article>
