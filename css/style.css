@@ -304,9 +304,9 @@ body.dark-mode {
     }
 }
 
-@media (max-width: 270px) {
+@media (max-width: 250px) {
     .header__content{
-        height: 15vh;
+        height: 16vh;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
