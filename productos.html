@@ -40,85 +40,78 @@
         
     </header>
 
-    <main>
-        <section class="user__profile">
-            <article class="profile__sidebar">
-                <article class="user__profile-pic">
-                    <img src="./assets/img/perfil.png" alt="Foto de perfil" class="profile__sidebar-img">
-                    <p class="user__profile-pic-name">Pablo Fernandez</p>
-
-                </article>
-                <ul class="profile__sidebar-un-list">
-                    <li class="profile__sidebar--list"><a href="#personal-info" class="profile__sidebar-listitem">Datos Personales</a></li>
-                    <li class="profile__sidebar--list"><a href="#bank-info" class="profile__sidebar-listitem">Información Bancaria</a></li>
-                    <li class="profile__sidebar--list"><a href="#security" class="profile__sidebar-listitem">Seguridad</a></li>
-                    <li class="profile__sidebar--list"><a href="#notifications" class="profile__sidebar-listitem">Notificaciones</a></li>
-                    <li class="profile__sidebar--list"><a href="#img" class="profile__sidebar-listitem">Editar Imagen</a></li>
-                </ul>
-
-            </article>
-            <section class="profile__main-content">
-              <!-- Datos Personales -->
-              <article id="personal-info">
-                <h2 class="profile__main-content-title">Datos Personales</h2>
-                <form class="profile__info--form">
-                  <label for="name" class="profile__labels">Nombre:</label>
-                  <input type="text" id="name" class="profile__inputs" name="name" value="Pablo Fernandez" />
-
-                  
-                  <label for="email" class="profile__labels">Correo Electrónico:</label>
-                  <input type="email" id="email" class="profile__inputs" name="email" value="Pablo.Fernandez@gmail.com" />
-                  
-                  <label for="phone" class="profile__labels">Teléfono:</label>
-                  <input type="tel" id="phone" class="profile__inputs" name="phone" value="+34 678 123 456" />
-                  
-                  <button type="submit" class="contacts__buttons">Guardar Cambios</button>
-                </form>
-              </article>
-              
-              <!-- Información Bancaria -->
-              <article id="user__bank-info">
-                <h2 class="profile__main-content-title">Información Bancaria</h2>
-                <article class="user__bank-card">
-                  <p class="user__bank-card--item">**** **** **** 1234</p>
-                  <p class="user__bank-card--item">Expira: 12/25</p>
-                  <button class="contacts__buttons-bank">Editar</button>
-                  <button class="contacts__buttons-bank">Eliminar</button>
-
-                </article>
-                <button class="contacts__buttons">Añadir Tarjeta</button>
-              </article>
-              
-              <!-- Seguridad -->
-              <article id="security">
-                <h2 class="profile__main-content-title">Seguridad</h2>
-                <form>
-                  <label for="current-password">Contraseña Actual:</label>
-                  <input type="password" id="current-password" class="profile__inputs" name="current-password" />
-                  
-                  <label for="new-password">Nueva Contraseña:</label>
-                  <input type="password" id="new-password" class="profile__inputs" name="new-password" />
-                  
-                  <button type="submit" class="contacts__buttons">Actualizar Contraseña</button>
-                </form>
-              </article>
-            </section>
-          </section>
-
-          <section class="user__contact-form">
-            <form action="#" method="POST" class="form-contacto">
-                <h1 class="user__contact__form-title">CONTACTA CON NOSOTROS A TRAVES DEL SIGUIENTE FORMULARIO</h1>
-                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" rows="5" required class="form-contacto-textarea"></textarea>
+    <main class="main__products">
     
-                <button type="submit" class="contact__form-button">Enviar</button>
-            </form>
+        <!-- Sección de productos -->
+        <section class="section-products__container">
+          <h2 class="section-products__title">Nuestros Productos</h2>
+          <article class="section-products__grid">
+            <article class="product-card1">
+              <h3 class="product-card__name">Portátiles y Ordenadores</h3>
+              <a href="#"><img src="./assets/img/products/ordenadores.png" alt="" class="product-card-img"></a>
+            </article>
+            <article class="product-card2">
+              <h3 class="product-card__name">Pantallas</h3>
+              <a href="#"><img src="./assets/img/products/monitor.png" alt="" class="product-card-img"></a>
+            </article>
+            <article class="product-card3">
+              <h3 class="product-card__name">Smartphones</h3>
+              <a href="#"><img src="./assets/img/products/smartphones.png" alt="" class="product-card-img"></a>
+            </article>
+            <article class="product-card4">
+              <h3 class="product-card__name">Componentes</h3>
+              <a href="#" class="products__button-link">Ver más</a>
+            </article>
+            <article class="product-card5">
+              <h3 class="product-card__name">Periféricos</h3>
+              <a href="#"><img src="./assets/img/products/perifericos.png" alt="" class="product-card-img"></a>
+            </article>
+            <article class="product-card6 ">
+              <h3 class="product-card__name">Comodidad</h3>
+              <a href="#"><img src="./assets/img/products/silla.png" alt="" class="product-card-img"></a>
+            </article>
+            <article class="product-card7 ">
+                <h3 class="product-card__name">Otros productos</h3>
+                <a href="#"><img src="./assets/img/products/otros.png" alt="" class="product-card-img"></a>
+            </article>
+          </article>
+        </section>
+
+        <!-- Sección del mapa -->
+        <section class="section-map">
+            <h2 class="section-map__title">¿Dónde puedes encontrarnos?</h2>
+            <article class="section-map__container">
+                <iframe 
+                class="section-map__iframe" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093693!2d144.9630579153177!3d-37.81421797975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577e2282d1142a2!2sFederation%20Square!5e0!3m2!1ses!2sau!4v1674929190389!5m2!1ses!2sau" 
+                allowfullscreen="" 
+                loading="lazy">
+                </iframe>
+            </article>
+            </section>
+    
+        <!-- Sección de newsletter -->
+        <section class="section-newsletter">
+            <article class="section-newsletter__container">
+              <h2 class="section-newsletter__title">¡Suscríbete a nuestro boletín!</h2>
+              <p class="section-newsletter__subtitle">
+                Recibe noticias, ofertas exclusivas y las últimas actualizaciones de BleteTech directamente en tu bandeja de entrada.
+              </p>
+              <form class="section-newsletter__form">
+                <input type="email" class="section-newsletter__input" placeholder="Introduce tu correo electrónico" required>
+                <button class="section-newsletter__button" type="submit">Suscribirse</button>
+              </form>
+              <p class="section-newsletter__note">
+                Nos preocupamos por tu privacidad. Nunca compartiremos tu información con terceros.
+              </p>
+            </article>
           </section>
 
-        <!-- es un simple detalle, preguntar si es necesario un section para esto -->
-        <article class="chatbot">
+          <!-- es un simple detalle, preguntar si es necesario un section para esto -->
+          <article class="chatbot">
             <button class="chatbot-button">💬</button>
-            </article>
-    </main>
+          </article>
+      </main>
 
     <footer class="footer__index">
         <p class="footer__copyright">&copy; 2025 BLETETECH. Todos los derechos reservados.</p>
@@ -167,6 +160,6 @@
         </article>
 
     </footer>
-    
+    <script src="./animacion.js"></script>
 </body>
 </html>
