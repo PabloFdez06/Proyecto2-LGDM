@@ -34,6 +34,40 @@ Este proyecto fue diseñado con un enfoque moderno y accesible, utilizando tecno
 - **Formulario de Contacto**: Los usuarios pueden enviar consultas o preguntas directamente a la empresa.
 - **Mapa de Localización**: Muestra la ubicación de la tienda física en Google Maps.
 
+### Etiquetas HTML Utilizadas
+
+A continuación se presentan las principales etiquetas HTML utilizadas en el desarrollo de este proyecto:
+
+- **Estructura Básica**:
+  - `<html>`, `<head>`, `<body>`
+
+- **Navegación y Contenido**:
+  - `<header>`, `<nav>`, `<article>`, `<footer>`
+
+- **Secciones de la Página**:
+  - `<section>`, `<h1>`, `<h2>`, `<h3>`
+
+- **Formularios**:
+  - `<form>`, `<input>`, `<textarea>`, `<button>`, `<label>`
+
+- **Enlaces y Listas**:
+  - `<a>`, `<ul>`, `<li>`
+
+- **Imágenes**:
+  - `<img>`
+
+- **Multimedia y Contenido Externo**:
+  - `<iframe>`
+
+- **Estilos y Diseño**:
+  - `<span>`
+
+- **Fuentes Externas y Scripts**:
+  - `<link>`, `<script>`
+
+Cada una de estas etiquetas juega un papel crucial en la organización y funcionalidad de las páginas, garantizando una experiencia de usuario fluida y accesible.
+
+
 ### Diseño Responsivo
 
 El diseño de las páginas es totalmente adaptativo para que el sitio sea accesible y visualmente atractivo en dispositivos móviles y de escritorio.
