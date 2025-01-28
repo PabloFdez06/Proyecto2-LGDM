@@ -271,7 +271,42 @@ body.dark-mode {
 
 @media (max-width: 375px) {
     .header__content{
-        height: 13vh;
+        height: 14vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+        background-color: var(--color_1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .header__logo {
+        width: 120px;
+    }
+
+    .header__menu {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        
+    }
+
+    .header__menu-link {
+        font-size: 0.8rem;
+        gap: 0;
+    }
+
+    .header__buttons--button {
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .header__content{
+        height: 15vh;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
