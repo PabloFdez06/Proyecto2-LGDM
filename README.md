@@ -39,7 +39,7 @@ Este proyecto fue diseñado con un enfoque moderno y accesible, utilizando tecno
 El diseño de las páginas es totalmente adaptativo para que el sitio sea accesible y visualmente atractivo en dispositivos móviles y de escritorio.
 
 ---
-
+```
 BleteTech/
 ├── assets/
 │   └── img/               # Imágenes utilizadas en el sitio
@@ -53,6 +53,7 @@ BleteTech/
 ├── servicios.html         # Página de servicios
 ├── contacto.html          # Página de contacto
 └── README.md              # Este archivo
+```
 
 ## Autor
 Este proyecto fue desarrollado por Pablo Fernandez, creador de BleteTech.
