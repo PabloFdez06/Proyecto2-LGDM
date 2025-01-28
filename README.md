@@ -42,7 +42,7 @@ El diseño de las páginas es totalmente adaptativo para que el sitio sea accesi
 ```
 BleteTech/
 ├── assets/
-│   └── img/               # Imágenes utilizadas en el sitio
+│   └── img/               # Imágenes utilizadas en el proyecto
 ├── css/
 │   └── style.css          # Archivo de estilo principal
 ├── js/
