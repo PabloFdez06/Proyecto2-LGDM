@@ -90,5 +90,9 @@ BleteTech/
 └── README.md              # Este archivo
 ```
 
+## PRUEBA DE VALIDACIÓN DEL CSS
+
+
+
 ## Autor
 Este proyecto fue desarrollado por Pablo Fernandez, creador de BleteTech.
