@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Proyecto BleteTech
 
@@ -92,3 +93,5 @@ BleteTech/
 
 ## Autor
 Este proyecto fue desarrollado por Pablo Fernandez, creador de BleteTech.
+
+
