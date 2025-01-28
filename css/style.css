@@ -269,6 +269,41 @@ body.dark-mode {
     }
 }
 
+@media (max-width: 375px) {
+    .header__content{
+        height: 13vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+        background-color: var(--color_1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .header__logo {
+        width: 120px;
+    }
+
+    .header__menu {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        
+    }
+
+    .header__menu-link {
+        font-size: 0.8rem;
+        gap: 0;
+    }
+
+    .header__buttons--button {
+        padding: 0.8rem;
+    }
+}
+
 
 /* ------------------------- */
 /* ----- FIN NAVEGADOR ----- */
@@ -1085,26 +1120,30 @@ body.dark-mode {
     color: var(--color_4);
 }
 
+/* ------------------------- */
+/* ----- MEDIA QUERIES ----- */
+/* ------------------------- */
+
 @media (max-width: 768px) {
     .profile__sidebar {
-        width: 100%; /* Sidebar ocupa todo el ancho en pantallas pequeñas */
+        width: 100%;
         border-right: none;
-        border-bottom: 2px solid var(--color_2); /* Línea divisoria debajo del sidebar */
+        border-bottom: 2px solid var(--color_2); 
     }
 }
 
 @media (max-width: 480px) {
     .profile__sidebar-img {
         width: 80px;
-        height: 80px; /* Tamaño más pequeño para las imágenes */
+        height: 80px;
     }
 
     .user__profile-pic-name {
-        font-size: 14px; /* Reducir el tamaño de fuente en pantallas muy pequeñas */
+        font-size: 14px; 
     }
 
     .profile__sidebar-listitem {
-        font-size: 14px; /* Ajustar tamaño de fuente en pantallas pequeñas */
+        font-size: 14px; 
     }
 }
 
@@ -1478,15 +1517,15 @@ body.dark-mode {
 }
 
 .chatbot-button.hidden {
-    opacity: 0.3; /* Baja la opacidad cuando está oculto */
-    transform: translateY(20px); /* Desliza ligeramente hacia abajo */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más tenue para dar la impresión de que está "a medio ver" */
+    opacity: 0.3; 
+    transform: translateY(20px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .chatbot-button:hover {
-    opacity: 0.8; /* Añadir una ligera opacidad cuando pasa el mouse para indicar que puede interactuar */
+    opacity: 0.8; 
 }
 
 .chatbot-button.hidden:hover {
-    opacity: 0.6; /* Mantener un estado de opacidad distinto cuando el botón está oculto */
+    opacity: 0.6;
 }
