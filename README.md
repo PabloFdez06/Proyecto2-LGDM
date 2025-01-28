@@ -30,7 +30,7 @@ Este proyecto fue diseñado con un enfoque moderno y accesible, utilizando tecno
 ### Funcionalidades Especiales
 
 - **Modo Oscuro**: Los usuarios pueden activar o desactivar el modo oscuro para mejorar la experiencia visual.
-- **Formulario de Suscripción**: Los usuarios pueden suscribirse a un boletín de noticias con ofertas exclusivas y actualizaciones.
+- **Boletin de Suscripción**: Los usuarios pueden suscribirse a un boletín de noticias con ofertas exclusivas y actualizaciones.
 - **Formulario de Contacto**: Los usuarios pueden enviar consultas o preguntas directamente a la empresa.
 - **Mapa de Localización**: Muestra la ubicación de la tienda física en Google Maps.
 
