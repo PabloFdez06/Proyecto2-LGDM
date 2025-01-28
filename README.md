@@ -1,5 +1,5 @@
 
-# Proyecto BleteTech
+# Proyecto BleteTech | AUTOR: PABLO FERNÁNDEZ FERNÁNDEZ
 
 ## Descripción
 
@@ -89,8 +89,24 @@ BleteTech/
 ├── contacto.html          # Página de contacto
 └── README.md              # Este archivo
 ```
+## PRUEBA DE VALIDACIÓN DE HTML
+
+### INICIO
+![image](https://github.com/user-attachments/assets/fb0a921d-ee08-4d85-a6bb-d0c1df129a18)
+
+### SERVICIOS
+![image](https://github.com/user-attachments/assets/ae323891-2977-412c-a8ee-d6be51de46d9)
+
+### PRODUCTOS
+![image](https://github.com/user-attachments/assets/7d65710d-890e-42cd-bb42-544077785816)
+
+### CONTACTOS
+![image](https://github.com/user-attachments/assets/aae62458-4b4e-40b7-b342-ef18106a1308)
+
+#### NINGUNA HOJA RECIBE ERROR, LOS WARNINGS DEL H2-H6 ES SEGUN ENTENDÍ YA QUE RECOMIENDA QUE UN ARTICLE COMIENCE CON UN TITULO, COSA QUE NO SIEMPRE ES NECESARIA.
 
 ## PRUEBA DE VALIDACIÓN DEL CSS
+![image](https://github.com/user-attachments/assets/4cc7fe3a-03fa-4f52-a251-c2079c61ab91)
 
 
 
