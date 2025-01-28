@@ -304,7 +304,7 @@ body.dark-mode {
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 270px) {
     .header__content{
         height: 15vh;
         display: flex;
