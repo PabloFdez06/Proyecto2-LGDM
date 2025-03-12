@@ -83,6 +83,7 @@ BleteTech/
 ├── js/
 │   ├── darkmode.js        # Script para el cambio entre modo claro y oscuro
 │   └── animacion.js       # Animaciones para los botones y transiciones
+│   └── script.js          # Script de la segunda parte del proyecto
 ├── index.html             # Página de inicio
 ├── productos.html         # Página de productos
 ├── servicios.html         # Página de servicios
@@ -90,9 +91,98 @@ BleteTech/
 └── README.md              # Este archivo
 ```
 
-## PRUEBA DE VALIDACIÓN DEL CSS
+#### PRUEBA DE VALIDACIÓN DEL CSS
 
+# Proyecto 3 | Fase 2
 
+En este proyecto aplicamos...
+
+Selección de Elementos en el DOM: Se utilizan diferentes métodos para acceder a elementos de la página, incluyendo getElementById, querySelector, querySelectorAll y getElementsByClassName. Estos permiten seleccionar elementos de manera eficiente y manipular su contenido o estilos.
+
+Manipulación del DOM: Se aplican modificaciones dinámicas, como cambiar el texto de un título, alterar los estilos de un botón al hacer clic, eliminar elementos de la página y agregar nuevos elementos dinámicamente.
+
+## Apartado 1: Selección de Elementos en el DOM
+
+- **1. Selección por ID:**
+
+```javascript
+const botonContacto = document.getElementById('botonContacto');
+console.log(botonContacto);
+```
+- **2. Selección con querySelector (primer elemento que coincide con el selector):**
+
+```javascript
+const primerMenuLink = document.querySelector('.header__menu-link');
+console.log(primerMenuLink);
+```
+
+- **3. Selección con querySelectorAll (todos los elementos que coinciden con el selector):**
+
+```javascript
+const todosMenuLinks = document.querySelectorAll('.header__menu-link');
+console.log(todosMenuLinks);
+
+todosMenuLinks.forEach(link => {
+    console.log(link.textContent);  // Muestra el texto de cada enlace en el menu
+});
+```
+
+- **4. Selección con getElementsByClassName (colección de elementos con la clase especificada):**
+
+```javascript
+const caracteristicasItems = document.getElementsByClassName('caracteristicas__item');
+console.log(caracteristicasItems);
+```
+
+## Apartado 2: Manipulación del DOM
+
+- **1. Cambio de Contenido de Título**
+
+```javascript
+const bienvenidaTitle = document.querySelector('.bienvenida__title');
+bienvenidaTitle.textContent = "Bienvenido a BLETETECH: Innovación Tecnológica";
+console.log(bienvenidaTitle);
+```
+
+- **2. Cambio de Estilo en un Botón**
+
+```javascript
+const a = document.getElementById('changeColorButton');
+const bienvenidaSection = document.querySelector('.bienvenida__cta');
+
+a.addEventListener('click', () => {
+    bienvenidaSection.style.backgroundColor = '#022B3A'; // Cambio a color primario
+    console.log('Color de fondo cambiado');
+});
+```
+
+- **3. Eliminación de Elementos (Eliminar el último producto)**
+
+```javascript
+const listaProductos = document.querySelector('.products__flex');
+const ultimoProducto = listaProductos.lastElementChild;
+
+if (ultimoProducto) {
+    ultimoProducto.remove();
+    console.log('Producto eliminado');
+}
+```
+
+- **4. Agregar un Nuevo Producto Dinámicamente**
+
+```javascript
+const nuevoProducto = document.createElement('li');
+nuevoProducto.classList.add('product-card');  
+
+nuevoProducto.innerHTML = `
+    <h3 class="product-card__title">Samsung Galaxy S24</h3>
+    <img src="./assets/img/products/silla.png" alt="Silla Gaming AjXm" class="product-card__image">
+    <a href="https://www.pccomponentes.com/samsung-galaxy-s24" class="product-card__link">Ver más</a>
+`;
+
+listaProductos.appendChild(nuevoProducto);
+console.log(nuevoProducto);
+```
 
 ## Autor
 Este proyecto fue desarrollado por Pablo Fernandez, creador de BleteTech.
