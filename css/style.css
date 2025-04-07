@@ -986,6 +986,7 @@ body.dark-mode {
 }
 
 .services__page--cta-link:hover {
+    cursor: pointer;
     background-color: var(--color_4);
     color: var(--color_2);
 }
@@ -1564,3 +1565,237 @@ body.dark-mode {
 .chatbot-button.hidden:hover {
     opacity: 0.6;
 }
+
+
+/* -----------------------------  */
+/* ------- ESTILOS CESTA ------- */
+/* -----------------------------  */
+
+
+.cart__page {
+    min-height: 64.4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: #1B7688;
+    color: #fff;
+  }
+  
+  .cart__content {
+    max-width: 700px;
+    width: 100%;
+    background: #0f3e4d;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .cart__title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cart__empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem 1rem;
+    color: #ccc;
+  }
+
+  .cart-item__image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+  
+  .cart__empty i {
+    font-size: 5rem;
+    color: #999;
+  }
+
+  .empty-cart-message{
+    padding-bottom: 1rem;
+  }
+  
+  .cart__btn--back {
+    background-color: #f05454;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cart__btn--back:hover {
+    background-color: #d94343;
+  }
+  
+  .cart__total {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .cart__btn--clear {
+    background-color: #b22222;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cart__btn--clear:hover {
+    background-color: #991d1d;
+  }
+
+  .remove-item {
+    padding: 5px 10px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.remove-item:hover {
+    background-color: #c0392b;
+}
+  
+/*   #cart-items {
+    display: none; /* Se mostrará dinámicamente si hay productos 
+  } */
+  
+
+
+/* 
+.cart__items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.cart-item:hover {
+    background-color: #f9f9f9;
+}
+
+.cart-item__image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.cart-item__details {
+    flex: 1;
+}
+
+.cart-item__name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.cart-item__description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.cart-item__price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #2e7d32;
+    margin-top: 10px;
+}
+
+.remove-item {
+    padding: 5px 10px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.remove-item:hover {
+    background-color: #c0392b;
+}
+
+.cart__total {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-top: 2px solid #ddd;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.cart__btn--clear {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cart__btn--clear:hover {
+    background-color: #2980b9;
+}
+
+.cart__empty {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 1.2rem;
+    color: #888;
+}
+
+.cart__btn--back {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cart__btn--back:hover {
+    background-color: #27ae60;
+} */ 

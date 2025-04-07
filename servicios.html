@@ -27,7 +27,7 @@
 
         <article class="header__buttons">
             <ul class="header__buttons--button">
-                <li class="header__button--link"><a href="./servicios.html"><i class="fas fa-shopping-cart"></i></a></li>
+                <li class="header__button--link"><a href="./cesta.html"><i class="fas fa-shopping-cart"></i></a></li>
                 <li class="header__button--link"><a href="./contacto.html"><i class="far fa-user-circle"></i></a></li>
             </ul>
         </article>
@@ -55,7 +55,15 @@
                 </article>
                 <article class="services__page--cta">
                     <a class="services__page--cta-link" href="#">¡Contáctanos ahora!</a>
-                </article>
+                    <button class="services__page--cta-link" 
+                    data-id="servicio1" 
+                    data-nombre="Consultoría personalizada" 
+                    data-precio="99.99"
+                    data-imagen="./assets/img/secciones_servicios/1.png">
+                  Adquirir servicio
+                </button>
+                  </article>
+                  
             </article>
 
             <article class="services__page--section2">
@@ -72,6 +80,14 @@
                     </article>
                     <article class="services__page--cta">
                         <a class="services__page--cta-link" href="#">¡Contáctanos ahora!</a>
+                        
+                        <button class="services__page--cta-link" 
+                            data-id="servicio2" 
+                            data-nombre="Marketing Digital" 
+                            data-precio="119.99"
+                            data-imagen="./assets/img/secciones_servicios/2.png">
+                            Adquirir servicio
+                        </button>
                     </article>
                 </article>
 
@@ -89,6 +105,13 @@
                         </article>
                         <article class="services__page--cta">
                             <a class="services__page--cta-link" href="#">¡Contáctanos ahora!</a>
+                            <button class="services__page--cta-link" 
+                                data-id="servicio3" 
+                                data-nombre="Desarrollo web personalizado" 
+                                data-precio="3200.00"
+                                data-imagen="./assets/img/secciones_servicios/3.png">
+                                Adquirir servicio
+                            </button>
                         </article> 
                     </article>
         </section>
@@ -173,6 +196,7 @@
 
     </footer>
     <script src="./js/animacion.js"></script>
+    <script src="./js/cesta.js"></script>
 
 </body>
 </html>

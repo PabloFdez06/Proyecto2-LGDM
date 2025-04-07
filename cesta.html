@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesta</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- fuente -->
+    <script src="https://kit.fontawesome.com/aba1cb0a6a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header__content">
+        <a href="./index.html"><img src="./assets/img/logo.png" alt="logo_navegador" class="header__logo"></a>
+
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li class="header__menu-item"><a href="./index.html" class="header__menu-link">Inicio</a></li>
+                <li class="header__menu-item"><a href="./servicios.html" class="header__menu-link">Servicios</a></li>
+                <li class="header__menu-item"><a href="./productos.html" class="header__menu-link">Productos</a></li>
+                <li class="header__menu-item"><a href="./contacto.html" class="header__menu-link">Contacto</a></li>
+            </ul>
+        </nav>
+
+
+        <article class="header__buttons">
+            <ul class="header__buttons--button">
+                <li class="header__button--link"><a href="./cesta.html"><i class="fas fa-shopping-cart"></i></a></li>
+                <li class="header__button--link" id="botonContacto"><a href="./contacto.html"><i class="far fa-user-circle"></i></a></li>
+            </ul>
+        </article>
+
+        <label class="dark-mode-toggle">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"></span>
+        </label>
+
+        
+    </header>
+
+    <main class="cart__page">
+        <section class="cart__content">
+          <h2 class="cart__title">Tu Cesta</h2>
+          
+          <div id="cart-items" class="cart__items"></div>
+    
+          <div class="cart__empty" id="empty-cart-message">
+            <i class="fas fa-shopping-cart"></i>
+            <p class="empty-cart-message">Tu cesta está vacía</p>
+            <a href="./servicios.html" class="cart__btn--back">Volver a Servicios</a>
+          </div>
+    
+          <div class="cart__total">
+            <p>Total: <span id="total-price">0.00€</span></p>
+            <button id="clear-cart" class="cart__btn--clear">Vaciar Cesta</button>
+          </div>
+        </section>
+      </main>
+    
+
+    
+
+  <footer class="footer__index">
+    <p class="footer__copyright">&copy; 2025 BLETETECH. Todos los derechos reservados.</p>
+    <article class="footer__container">
+        <article class="footer__contact-art">
+            <h3>Contacto</h3>
+            <article class="footer__contact--links">
+                <ul class="footer__contact-link">
+                <li>📞 Teléfono: +34 123 456 789</li>
+                <li>✉️ Email: <a href="mailto:soporte@boxingmerch.com">soporte@bletetech.com</a></li>
+                <li>📍 Dirección: Calle del amor 123, Cadiz, España</li>
+            </ul>
+            </article>
+        </article>
+
+        <article class="footer__social-art">
+            <h3>Redes sociales</h3>
+            <article class="footer__social--links">
+                    <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-youtube"></i></a>
+            </article>
+        </article>
+
+        <article class="footer__payment-art">
+            <h3>Pagos</h3>
+            <article class="footer__payment--links">
+                <a href="#" class="footer__payment-link"><i class="fas fa-credit-card"></i></a>
+                <a href="#" class="footer__payment-link"><i class="fab fa-cc-mastercard"></i></a>
+                <a href="#" class="footer__payment-link"><i class="fab fa-paypal"></i></a>
+            </article>
+        </article>
+
+        <article class="footer__nav-art">
+            <h3>Navegación</h3>
+            <article class="footer__nav--links">
+                <ul class="footer__nav-link">
+                    <li class="hola"><a href="./index.html">Inicio</a></li>
+                    <li><a href="./servicios.html">Servicios</a></li>
+                    <li><a href="#">Terminos y Condiciones</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </article>
+        </article>
+    </article>
+
+</footer>
+    <script src="./js/animacion.js"></script>
+
+    <script src="./js/cesta.js" defer></script>
+  
+</body>
+</html>
