@@ -26,11 +26,17 @@ function updateCart() {
         const cartItem = document.createElement('div');
         cartItem.classList.add('cart-item');
         cartItem.innerHTML = `
+        <div class="cart-item__image-wrapper">
             <img src="${item.imagen}" alt="${item.nombre}" class="cart-item__image" />
-            <span>${item.nombre}</span>
-            <span>${item.precio}€</span>
+        </div>
+        <div class="cart-item__details">
+            <h4 class="cart-item__name">${item.nombre}</h4>
+            <p class="cart-item__price">${item.precio}€</p>
             <button class="remove-item" data-id="${item.id}">Eliminar</button>
-        `;
+        </div>
+    `;
+    
+    
         cartItemsContainer.appendChild(cartItem);
         totalPrice += parseFloat(item.precio);
     });
