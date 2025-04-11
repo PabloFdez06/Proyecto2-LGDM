@@ -272,6 +272,18 @@ A continuación, presento mi evaluación personal del proyecto, analizando cada 
 
 ---
 
+## Uso de localStorage
+
+**Lo que hice:**
+- En la funcionalidad del carrito, utilizo `localStorage` para guardar y recuperar los productos añadidos.  
+- Esto permite que la información del carrito persista incluso al recargar la página, mejorando la experiencia de usuario.
+- Además, la preferencia del modo oscuro se guarda en `localStorage`, lo que garantiza que el tema seleccionado se mantenga a lo largo de las sesiones.
+
+**Aspectos positivos:**
+- El uso de `localStorage` es correcto y mejora la funcionalidad interactiva de la aplicación.
+- Permite mantener datos importantes (como el estado del carrito y el tema) de manera persistente.
+
+---
 
 ## Autor
 Este proyecto fue desarrollado por Pablo Fernandez, creador de BleteTech.
