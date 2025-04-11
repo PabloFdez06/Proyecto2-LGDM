@@ -48,7 +48,7 @@
           <article class="section-products__grid">
             <article class="product-card1">
               <h3 class="product-card__name">Portátiles y Ordenadores</h3>
-              <a href="#"><img src="./assets/img/products/ordenadores.png" alt="" class="product-card-img"></a>
+              <a href="./productos2.html"><img src="./assets/img/products/ordenadores.png" alt="" class="product-card-img"></a>
             </article>
             <article class="product-card2">
               <h3 class="product-card__name">Pantallas</h3>
@@ -91,7 +91,7 @@
             </section>
     
         <!-- Sección de newsletter -->
-        <section class="section-newsletter">
+<!--         <section class="section-newsletter">
             <article class="section-newsletter__container">
               <h2 class="section-newsletter__title">¡Suscríbete a nuestro boletín!</h2>
               <p class="section-newsletter__subtitle">
@@ -105,7 +105,39 @@
                 Nos preocupamos por tu privacidad. Nunca compartiremos tu información con terceros.
               </p>
             </article>
+          </section> -->
+
+          <section class="section-newsletter">
+            <article class="section-newsletter__container">
+              <h2 class="section-newsletter__title">¡Suscríbete a nuestro boletín!</h2>
+              <p class="section-newsletter__subtitle">
+                Recibe noticias, ofertas exclusivas y las últimas actualizaciones de BleteTech directamente en tu bandeja de entrada.
+              </p>
+              <form class="section-newsletter__form" id="newsletterForm">
+                  <article class="casilla-formulario">
+                    <input type="text" class="section-newsletter__input" placeholder="Introduce tu nombre" id="firstName">
+                    <div class="error-message" id="firstNameError"></div>
+                  </article>
+                  <article class="casilla-formulario">
+                    <input type="text" class="section-newsletter__input" placeholder="Introduce tus apellidos" id="lastName" >
+                    <div class="error-message" id="lastNameError"></div>
+                  </article>
+                  <article class="casilla-formulario">
+                    <input type="text" class="section-newsletter__input" placeholder="Introduce tu ciudad" id="city" >
+                    <div class="error-message" id="cityError"></div>
+                  </article>
+                  <article class="casilla-formulario">
+                    <input type="email" class="section-newsletter__input" placeholder="Introduce tu correo electrónico" id="email" >
+                    <div class="error-message" id="emailError"></div>
+                  </article>
+                <button class="section-newsletter__button" type="submit">Suscribirse</button>
+              </form>
+              <p class="section-newsletter__note">
+                Nos preocupamos por tu privacidad. Nunca compartiremos tu información con terceros.
+              </p>
+            </article>
           </section>
+          
 
           <!-- es un simple detalle, preguntar si es necesario un section para esto -->
           <article class="chatbot">
@@ -160,6 +192,6 @@
         </article>
 
     </footer>
-    <script src="./js/animacion.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

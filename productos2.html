@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- fuente -->
+    <script src="https://kit.fontawesome.com/aba1cb0a6a.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="page page--home">
+    <header class="header__content">
+        <a href="./index.html"><img src="./assets/img/logo.png" alt="logo_navegador" class="header__logo"></a>
+
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li class="header__menu-item"><a href="./index.html" class="header__menu-link">Inicio</a></li>
+                <li class="header__menu-item"><a href="./servicios.html" class="header__menu-link">Servicios</a></li>
+                <li class="header__menu-item"><a href="./productos.html" class="header__menu-link">Productos</a></li>
+                <li class="header__menu-item"><a href="./contacto.html" class="header__menu-link">Contacto</a></li>
+            </ul>
+        </nav>
+
+
+        <article class="header__buttons">
+            <ul class="header__buttons--button">
+                <li class="header__button--link"><a href="./cesta.html"><i class="fas fa-shopping-cart"></i></a></li>
+                <li class="header__button--link" id="botonContacto"><a href="./contacto.html"><i class="far fa-user-circle"></i></a></li>
+            </ul>
+        </article>
+
+        <label class="dark-mode-toggle">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"></span>
+        </label>
+
+        
+    </header>
+    <main class="main__productos2">
+            <h1 class="titulo_main-productos2">PORTATILES Y ORDENADORES</h1>
+    
+        <section class="contenedor_principal">
+            <!-- Filtros -->
+            <aside class="menu_filtros">
+                <h2>FILTROS</h2>
+                <ul>
+                    <!-- Filtros de Precio -->
+                    <li class="filtro">
+                        <h3 class="titulo_filtro">Precio</h3>
+                        <ul class="submenu">
+                            <li><label><input type="checkbox" name="precio" value="bajo"> Menos de 500€</label></li>
+                            <li><label><input type="checkbox" name="precio" value="medio"> 500€ - 1000€</label></li>
+                            <li><label><input type="checkbox" name="precio" value="alto"> Más de 1000€</label></li>
+                        </ul>
+                    </li>
+                    <hr>
+                    <!-- Filtros de Año -->
+                    <li class="filtro">
+                        <h3 class="titulo_filtro">Año</h3>
+                        <ul class="submenu">
+                            <li><label><input type="checkbox" name="year" value="nuevo"> 2020 en adelante</label></li>
+                            <li><label><input type="checkbox" name="year" value="medio"> 2015 - 2019</label></li>
+                            <li><label><input type="checkbox" name="year" value="antiguo"> Antes de 2015</label></li>
+                        </ul>
+                    </li>
+                    <hr>
+                    <!-- Filtros de Sistema Operativo -->
+                    <li class="filtro">
+                        <h3 class="titulo_filtro">Sistema Operativo</h3>
+                        <ul class="submenu">
+                            <li><label><input type="checkbox" name="os" value="windows"> Windows</label></li>
+                            <li><label><input type="checkbox" name="os" value="macos"> macOS</label></li>
+                            <li><label><input type="checkbox" name="os" value="linux"> Linux</label></li>
+                        </ul>
+                    </li>
+                    <hr>
+                    <!-- Filtros de Tipo -->
+                    <li class="filtro">
+                        <h3 class="titulo_filtro">Tipo</h3>
+                        <ul class="submenu">
+                            <li><label><input type="checkbox" name="tipo" value="portatil"> Portátil</label></li>
+                            <li><label><input type="checkbox" name="tipo" value="escritorio"> Ordenador de sobremesa</label></li>
+                        </ul>
+                    </li>
+                </ul>
+              </aside>    
+              <section class="galeria">
+                <!-- Primer bloque de imágenes -->
+                <article class="galeria_hijo">
+                    <article class="contenedor_imagen" data-price="450" data-year="2021" data-os="windows" data-tipo="portatil">
+                        <img src="./assets/img/portatiles_sobremesas/1.png" alt="Imagen 1">
+                        <label class="iconos">
+                            <span><i class="fa fa-solid fa-heart"></i></span>
+                            <span><i class="fa fa-solid fa-cart-plus"></i></span>
+                        </label>
+                    </article>
+        
+                    <article class="contenedor_imagen" data-price="750" data-year="2019" data-os="macos" data-tipo="portatil">
+                        <img src="./assets/img/portatiles_sobremesas/2.png" alt="Imagen 2">
+                        <label class="iconos">
+                            <span><i class="fa fa-solid fa-heart"></i></span>
+                            <span><i class="fa fa-solid fa-cart-plus"></i></span>
+                        </label>
+                    </article>
+        
+                    <article class="contenedor_imagen" data-price="1100" data-year="2016" data-os="linux" data-tipo="escritorio">
+                        <img src="./assets/img/portatiles_sobremesas/3.png" alt="Imagen 3">
+                        <label class="iconos">
+                            <span><i class="fa fa-solid fa-heart"></i></span>
+                            <span><i class="fa fa-solid fa-cart-plus"></i></span>
+                        </label>
+                    </article>
+                </article>
+        
+                <!-- Segundo bloque de imágenes -->
+                <article class="galeria_hijo">
+                    <article class="contenedor_imagen" data-price="300" data-year="2023" data-os="windows" data-tipo="portatil">
+                        <img src="./assets/img/portatiles_sobremesas/4.png" alt="Imagen 4">
+                        <label class="iconos">
+                            <span><i class="fa fa-solid fa-heart"></i></span>
+                            <span><i class="fa fa-solid fa-cart-plus"></i></span>
+                        </label>
+                    </article>
+        
+                    <article class="contenedor_imagen" data-price="850" data-year="2018" data-os="macos" data-tipo="escritorio">
+                        <img src="./assets/img/portatiles_sobremesas/5.png" alt="Imagen 5">
+                        <label class="iconos">
+                            <span><i class="fa fa-solid fa-heart"></i></span>
+                            <span><i class="fa fa-solid fa-cart-plus"></i></span>
+                        </label>
+                    </article>
+        
+                    <article class="contenedor_imagen" data-price="1300" data-year="2017" data-os="windows" data-tipo="escritorio">
+                        <img src="./assets/img/portatiles_sobremesas/6.png" alt="Imagen 6">
+                        <label class="iconos">
+                            <span><i class="fa fa-solid fa-heart"></i></span>
+                            <span><i class="fa fa-solid fa-cart-plus"></i></span>
+                        </label>
+                    </article>
+                </article>
+        
+                <!-- Tercer bloque de imágenes -->
+                <article class="galeria_hijo">
+                    <article class="contenedor_imagen" data-price="480" data-year="2020" data-os="linux" data-tipo="escritorio">
+                        <img src="./assets/img/portatiles_sobremesas/7.png" alt="Imagen 7">
+                        <label class="iconos">
+                            <span><i class="fa fa-solid fa-heart"></i></span>
+                            <span><i class="fa fa-solid fa-cart-plus"></i></span>
+                        </label>
+                    </article>
+        
+                    <article class="contenedor_imagen" data-price="950" data-year="2015" data-os="windows" data-tipo="portatil">
+                        <img src="./assets/img/portatiles_sobremesas/8.png" alt="Imagen 8">
+                        <label class="iconos">
+                            <span><i class="fa fa-solid fa-heart"></i></span>
+                            <span><i class="fa fa-solid fa-cart-plus"></i></span>
+                        </label>
+                    </article>
+        
+                    <article class="contenedor_imagen" data-price="1600" data-year="2014" data-os="macos" data-tipo="escritorio">
+                        <img src="./assets/img/portatiles_sobremesas/9.png" alt="Imagen 9">
+                        <label class="iconos">
+                            <span><i class="fa fa-solid fa-heart"></i></span>
+                            <span><i class="fa fa-solid fa-cart-plus"></i></span>
+                        </label>
+                    </article>
+                </article>
+                <!-- cuarto bloque de imágenes -->
+                <article class="galeria_hijo">
+                    <article class="contenedor_imagen" data-price="520" data-year="2022" data-os="windows" data-tipo="portatil">
+                        <img src="./assets/img/portatiles_sobremesas/10.png" alt="Imagen 10">
+                        <label class="iconos">
+                            <span><i class="fa fa-solid fa-heart"></i></span>
+                            <span><i class="fa fa-solid fa-cart-plus"></i></span>
+                        </label>
+                    </article>
+        
+                    <article class="contenedor_imagen" data-price="400" data-year="2021" data-os="linux" data-tipo="portatil">
+                        <img src="./assets/img/portatiles_sobremesas/11.png" alt="Imagen 11">
+                        <label class="iconos">
+                            <span><i class="fa fa-solid fa-heart"></i></span>
+                            <span><i class="fa fa-solid fa-cart-plus"></i></span>
+                        </label>
+                    </article>
+        
+                    <article class="contenedor_imagen" data-price="1400" data-year="2013" data-os="windows" data-tipo="escritorio">
+                        <img src="./assets/img/portatiles_sobremesas/12.png" alt="Imagen 12">
+                        <label class="iconos">
+                            <span><i class="fa fa-solid fa-heart"></i></span>
+                            <span><i class="fa fa-solid fa-cart-plus"></i></span>
+                        </label>
+                    </article>
+                </article>
+            </section>
+        </section>
+        <article class="chatbot">
+            <button class="chatbot-button">💬</button>
+          </article>
+    
+        </main>
+    <footer class="footer__index">
+        <p class="footer__copyright">&copy; 2025 BLETETECH. Todos los derechos reservados.</p>
+        <article class="footer__container">
+            <article class="footer__contact-art">
+                <h3>Contacto</h3>
+                <article class="footer__contact--links">
+                    <ul class="footer__contact-link">
+                    <li>📞 Teléfono: +34 123 456 789</li>
+                    <li>✉️ Email: <a href="mailto:soporte@boxingmerch.com">soporte@bletetech.com</a></li>
+                    <li>📍 Dirección: Calle del amor 123, Cadiz, España</li>
+                </ul>
+                </article>
+            </article>
+
+            <article class="footer__social-art">
+                <h3>Redes sociales</h3>
+                <article class="footer__social--links">
+                        <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-youtube"></i></a>
+                </article>
+            </article>
+
+            <article class="footer__payment-art">
+                <h3>Pagos</h3>
+                <article class="footer__payment--links">
+                    <a href="#" class="footer__payment-link"><i class="fas fa-credit-card"></i></a>
+                    <a href="#" class="footer__payment-link"><i class="fab fa-cc-mastercard"></i></a>
+                    <a href="#" class="footer__payment-link"><i class="fab fa-paypal"></i></a>
+                </article>
+            </article>
+
+            <article class="footer__nav-art">
+                <h3>Navegación</h3>
+                <article class="footer__nav--links">
+                    <ul class="footer__nav-link">
+                        <li class="hola"><a href="./index.html">Inicio</a></li>
+                        <li><a href="./servicios.html">Servicios</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Terminos y Condiciones</a></li>
+                    </ul>
+                </article>
+            </article>
+        </article>
+
+    </footer>
+    <script src="./js/script.js"></script>
+
+</body>
+</html>

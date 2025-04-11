@@ -1496,6 +1496,17 @@ body.dark-mode {
     gap: 1rem;
   }
   
+/*   .section-newsletter__input {
+    padding: 0.8rem;
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid var(--color_2);
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: var(--color_4);
+    color: var(--color_3);
+  } */
+
   .section-newsletter__input {
     padding: 0.8rem;
     width: 100%;
@@ -1505,6 +1516,7 @@ body.dark-mode {
     font-size: 1rem;
     background-color: var(--color_4);
     color: var(--color_3);
+    margin-bottom: 0.5rem; /* Espacio entre el campo de entrada y el mensaje de error */
   }
   
   .section-newsletter__input:focus {
@@ -1523,6 +1535,8 @@ body.dark-mode {
     cursor: pointer;
     transition: transform 0.2s, background-color 0.3s;
   }
+
+
   
   .section-newsletter__button:hover {
     background-color: var(--color_1);
@@ -1535,7 +1549,34 @@ body.dark-mode {
     color: var(--color_4);
     opacity: 0.8;
   }
-
+  
+  .casilla-formulario {
+    position: relative;
+    width: 100%;
+  }
+  
+  .error-message {
+    display: none;
+    width: 75%; 
+    font-size: 0.9rem;
+    color: var(--color_1);
+    background-color: #ffcccb; 
+    padding: 0.5rem;
+    margin: auto;
+    border-radius: 5px;
+    text-align: left;
+    border: 1px solid #f44336; 
+    box-sizing: border-box;
+  }
+  
+  .error-message.show {
+    display: block;
+  }
+  
+  .error-message p {
+    margin: 0;
+    padding: 0;
+  }
 
   .chatbot-button {
     position: fixed;
@@ -1579,8 +1620,8 @@ body.dark-mode {
     justify-content: center;
     align-items: center;
     padding: 4rem 2rem;
-    background-color: #1B7688;
-    color: #fff;
+    background-color: var(--color_2);
+    color: var(--color_4);
   }
 
 
@@ -1603,7 +1644,7 @@ body.dark-mode {
   .cart__content {
     max-width: 700px;
     width: 100%;
-    background: #0f3e4d;
+    background: var(--color_1);
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -1644,7 +1685,7 @@ body.dark-mode {
   
   .cart__btn--back {
     background-color: #f05454;
-    color: white;
+    color: var(--color_4);
     padding: 0.7rem 1.5rem;
     border-radius: 8px;
     text-decoration: none;
@@ -1666,7 +1707,7 @@ body.dark-mode {
   
   .cart__btn--clear {
     background-color: #b22222;
-    color: white;
+    color: var(--color_4);
     border: none;
     padding: 0.6rem 1.2rem;
     border-radius: 8px;
@@ -1681,7 +1722,7 @@ body.dark-mode {
   .remove-item {
     padding: 5px 10px;
     background-color: #e74c3c;
-    color: #fff;
+    color: var(--color_4);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -1693,3 +1734,189 @@ body.dark-mode {
     background-color: #c0392b;
 }
   
+
+/* ESTILOS PARA PÁGINA PRODUCTOS2 */
+
+.main__productos2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color_2);
+}
+
+
+
+.titulo_main-productos2{
+    font-size: 1.5rem;
+    color: var(--color_4);
+    padding-top: 1rem;
+    width: 100%;
+    text-align: center;
+    padding-left: 2rem;
+}
+
+/* Contenedor principal para filtros y galería */
+.contenedor_principal {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    gap: 2rem; 
+    width: 90%;
+    margin: 2rem auto;
+}
+
+/* Menú de filtros */
+.menu_filtros {
+    width: 20%; 
+    background-color: var(--color_4);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgb(0, 191, 255);
+}
+
+.menu_filtros h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid var(--color_2);
+    padding-bottom: 0.5rem;
+    color: var(--color_3);
+}
+
+.menu_filtros ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu_filtros .filtro {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+/* Estilo de los títulos */
+.menu_filtros .titulo_filtro {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    color: var(--color_3);
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    background-color:  rgba(0, 0, 0, 0.1);;
+}
+
+.menu_filtros .titulo_filtro:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.menu_filtros .submenu {
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+    border-left: 1px solid var(--color_2);
+    display: block; 
+    max-height: none; 
+}
+
+.menu_filtros .submenu li {
+    margin-bottom: 0.5rem;
+}
+
+.menu_filtros .submenu label {
+    font-size: 1rem;
+    color: #000000;
+    cursor: pointer;
+}
+
+.menu_filtros{
+    margin-right: 0.5rem;
+}
+
+.menu_filtros hr {
+    border: none;
+    height: 0.5px;
+    margin: 1rem 0;
+    background-color: var(--color_2);
+
+}
+
+/* Galería de productos */
+.galeria {
+    width: 75%; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Imágenes */
+.galeria img {
+    width: 15rem; 
+    height: 30vh;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+
+
+.galeria img:hover {
+    transform: scale(1.1); 
+}
+
+
+.contenedor_imagen {
+    position: relative; /* Necesario para que los iconos se posicionen correctamente */
+}
+
+
+.iconos {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 0.5rem; 
+}
+
+.iconos span {
+    color: var(--color_4);
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.iconos span:hover {
+    transform: scale(1.1);
+}
+
+.fa-heart:hover {
+    color: red;
+}
+
+.fa-cart-plus:hover {
+    color: rgba(116, 239, 255, 0.73);
+}
+
+
+
+
+/* ---------- ----------------- ------------ */
+/* ---------- FIN DEL MAIN ------------ */
+/* ---------- ----------------- ------------ */
+
+/* ---------- ----------------- ------------ */
+/* ---------- DISEÑO RESPONSIVE ------------ */
+/* ---------- ----------------- ------------ */
+
+@media screen and (max-width: 1015px) {
+    .contenedor_principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu_filtros {
+        width: 80%; 
+        margin-bottom: 1rem; 
+    }
+}
+
+/* ---------- ----------------- ------------ */
+/* ---------- FIN DEL RESPONSIVE ----------- */
+/* ---------- ----------------- ------------ */

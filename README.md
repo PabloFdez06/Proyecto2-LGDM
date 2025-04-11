@@ -184,5 +184,94 @@ listaProductos.appendChild(nuevoProducto);
 console.log(nuevoProducto);
 ```
 
+# Proyecto 3 | Fase 3
+
+# Autoevaluación del Proyecto – Funcionalidades Interactivas
+
+A continuación, presento mi evaluación personal del proyecto, analizando cada uno de los criterios indicados. He intentado aplicar JavaScript moderno (ES6+) en las funcionalidades, como en el dark mode, la validación del formulario, el carrito de compras y el sistema de filtros. A continuación, intento explicar lo necesario sobre cada criterio.
+
+---
+
+## Criterio 3.a: Lenguajes de Script y ECMAScript
+
+**Lo que hice:**
+- Utilicé JavaScript para implementar la funcionalidad interactiva de la página.
+- He empleado ES6+ (uso de `const` y `let`, uso de template literals y algunos arrow functions) en varias partes del proyecto.
+- El código está organizado en bloques (modo oscuro, validación, carrito y filtros), como exige la práctica en un mismo archivo.
+
+**Aspectos positivos:**
+- Se evidencia el uso de técnicas modernas para manipular el DOM.
+- Las funcionalidades están bien separadas y cumplen las necesidades del proyecto.
+
+---
+
+## Criterio 3.b: Sintaxis Básica de JavaScript
+
+**Lo que hice:**
+- Declaro variables con `let` y `const` y uso template literals para construir cadenas dinámicamente.
+- Aunque en algunas partes uso la sintaxis clásica de funciones, aunque en general se aprovechan las características de ES6.
+
+**Aspectos positivos:**
+- El código es claro, estructurado y funcional.
+  
+
+---
+
+## Criterio 3.c: Selección y Acceso a Elementos del DOM
+
+**Lo que hice:**
+- Utilizo métodos como `document.getElementById`, `querySelector` y `querySelectorAll` de forma consistente para manipular elementos (por ejemplo, para el dark mode, el formulario, los filtros y el carrito).
+
+**Aspectos positivos:**
+- La selección de elementos está bien enfocada y permite un acceso rápido y efectivo al DOM.
+
+---
+
+## Criterio 3.d: Creación y Modificación de Elementos del DOM
+
+**Lo que hice:**
+- En la funcionalidad del carrito, creo elementos dinámicamente usando `document.createElement` y los añado al DOM con `appendChild`.
+- Actualizo el contenido dinámicamente usando `innerHTML`.
+
+- Demostracion:
+  - Como se puede comprobar en esta imagen, la cesta está vacia,  
+    ![cesta_vacia](./demostracion_code/cesta_vacia.png)
+  - Sin embargo, una vez añadimos articulos, asi quedaria esteticamente, y la manipulación del DOM seria la siguiente:
+    ![cesta_con_datos](./demostracion_code/cesta_con_datos.png)
+
+  - Documento HTML donde se indica la inyeccion:
+    ![html_code](./demostracion_code/html_code.png)
+
+
+**Aspectos positivos:**
+- La creación y modificación dinámica de los elementos es clara y permite una experiencia interactiva en tiempo real.
+
+
+
+---
+
+## Criterio 3.e: Eliminación de Elementos del DOM
+
+**Lo que hice:**
+- Para eliminar ítems del carrito, filtro el array y actualizo el DOM dependiendo del seleccionado.
+- Se utiliza la eliminación de elementos de forma que se mantiene el DOM limpio y funcional.
+
+**Aspectos positivos:**
+- La eliminación se realiza correctamente sin errores, y se controla de forma precisa el contenido mostrado.
+
+---
+
+## Criterio 3.f: Modificaciones Dinámicas de Estilos
+
+**Lo que hice:**
+- Implementé el modo oscuro utilizando `classList.toggle` para cambiar entre estilos.
+- Se realiza una modificación dinámica de estilos para animar la sección del newsletter al hacer scroll (ajustando opacidad y transformación).
+
+**Aspectos positivos:**
+- Los cambios de estilo son coherentes con el diseño y responden adecuadamente a las interacciones del usuario.
+
+---
+
+
 ## Autor
 Este proyecto fue desarrollado por Pablo Fernandez, creador de BleteTech.
