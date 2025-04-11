@@ -186,7 +186,11 @@ console.log(nuevoProducto);
 
 # Proyecto 3 | Fase 3
 
-# Autoevaluación del Proyecto – Funcionalidades Interactivas
+## IMPORTANTE
+Para el apartado de los filtros y demás, he creado una página nueva, al igual que con la cesta. Para llegar a esta página
+debemos ir a: Productos - Portátiles y Ordenadores. Esta será la única que sea interactiva.
+
+# Autoevaluación | Explicación del Proyecto – Funcionalidades Interactivas
 
 A continuación, presento mi evaluación personal del proyecto, analizando cada uno de los criterios indicados. He intentado aplicar JavaScript moderno (ES6+) en las funcionalidades, como en el dark mode, la validación del formulario, el carrito de compras y el sistema de filtros. A continuación, intento explicar lo necesario sobre cada criterio.
 
@@ -245,8 +249,6 @@ A continuación, presento mi evaluación personal del proyecto, analizando cada 
 
 **Aspectos positivos:**
 - La creación y modificación dinámica de los elementos es clara y permite una experiencia interactiva en tiempo real.
-
-
 
 ---
 
